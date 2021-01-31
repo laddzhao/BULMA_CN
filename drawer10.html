@@ -1,0 +1,693 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>BULMA中文</title>
+<style type="text/css">
+body,td,th {
+	font-size: 34px;
+}
+</style>
+<link href="css/css.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<a class="navbar-item" href="https://bulma.io">
+      <img src="https://bulma.io/images/bulma-logo.png" alt="Bulma: Free, open source, and modern CSS framework based on Flexbox" width="112" height="28">
+<h1><strong>中文CSS免费的开放源代码框架部分</strong></h1>
+</a>
+<h1>第十章.下拉按钮</h1>
+<main class="bd-docs-main">
+    
+      <div class="container">
+        
+
+<section class="hero bd-hero bd-is-basic"> </section>
+<div class="bd-docs-body">
+  <div class="bd-docs-content bd-content algolia-content">
+    <div class="content"></div>
+
+<div class="
+  bd-snippet
+  bd-is-vertical
+  
+  
+  bd-is-size-1
+  ">
+  <div class="bd-snippet-example">
+    <p class="bd-snippet-title"><span class="bd-snippet-tag bd-is-example"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">例</font></font></span>
+    </p>
+
+    <div class="bd-snippet-preview">
+      
+        
+<div class="dropdown">
+  <div class="dropdown-trigger">
+    <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+      <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">下拉按钮</font></font></span>
+      <span class="icon is-small">
+        <i class="fas fa-angle-down" aria-hidden="true"></i>
+      </span>
+    </button>
+  </div>
+  <div class="dropdown-menu" id="dropdown-menu" role="menu">
+    <div class="dropdown-content">
+      <a href="#" class="dropdown-item"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+        下拉项目
+      </font></font></a>
+      <a class="dropdown-item"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+        其他下拉项目
+      </font></font></a>
+      <a href="#" class="dropdown-item is-active"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+        活动下拉菜单项
+      </font></font></a>
+      <a href="#" class="dropdown-item"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+        其他下拉项目
+      </font></font></a>
+      <hr class="dropdown-divider">
+      <a href="#" class="dropdown-item"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+        带分隔线
+      </font></font></a>
+    </div>
+  </div>
+</div>
+
+      
+    </div>
+  </div>
+
+  <div class="bd-snippet-source">
+    <p class="bd-snippet-title">
+      <span class="bd-snippet-tag bd-is-html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">的HTML</font></font></span>
+    </p>
+
+    <div class="
+        bd-snippet-code
+        bd-highlight-full
+        
+      ">
+      <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropdown is-active"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropdown-trigger"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"button"</span> <span class="na">aria-haspopup=</span><span class="s">"true"</span> <span class="na">aria-controls=</span><span class="s">"dropdown-menu"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;span&gt;</span>Dropdown button<span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon is-small"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-angle-down"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/i&gt;</span>
+      <span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropdown-menu"</span> <span class="na">id=</span><span class="s">"dropdown-menu"</span> <span class="na">role=</span><span class="s">"menu"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropdown-content"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"dropdown-item"</span><span class="nt">&gt;</span><font></font>
+        Dropdown item<font></font>
+      <span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"dropdown-item"</span><span class="nt">&gt;</span><font></font>
+        Other dropdown item<font></font>
+      <span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"dropdown-item is-active"</span><span class="nt">&gt;</span><font></font>
+        Active dropdown item<font></font>
+      <span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"dropdown-item"</span><span class="nt">&gt;</span><font></font>
+        Other dropdown item<font></font>
+      <span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;hr</span> <span class="na">class=</span><span class="s">"dropdown-divider"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"dropdown-item"</span><span class="nt">&gt;</span><font></font>
+        With a divider<font></font>
+      <span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+    </div>
+  </div>
+</div>
+
+
+<h3 id="dropdown-content" class="title is-4 is-spaced bd-anchor-title">
+  <span class="bd-anchor-name"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+    下拉内容
+  </font></font></span>
+  <a class="bd-anchor-link" href="#dropdown-content"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+    ＃
+  </font></font></a>
+</h3>
+
+
+<div class="content">
+  <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+    尽管</font></font><code>dropdown-item</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">可以用作锚链接</font></font><code>&lt;a&gt;</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">，但您也可以使用</font></font><code>&lt;div&gt;</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">并插入几乎</font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">任何类型的内容</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。
+  </font></font></p>
+</div>
+
+<div class="
+  bd-snippet
+  bd-is-vertical
+  
+  
+  bd-is-size-1
+  ">
+  <div class="bd-snippet-example">
+    <p class="bd-snippet-title">
+      <span class="bd-snippet-tag bd-is-example"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">例</font></font></span>
+    </p>
+
+    <div class="bd-snippet-preview">
+      
+        
+<div class="dropdown">
+  <div class="dropdown-trigger">
+    <button class="button" aria-haspopup="true" aria-controls="dropdown-menu2">
+      <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">内容</font></font></span>
+      <span class="icon is-small">
+        <i class="fas fa-angle-down" aria-hidden="true"></i>
+      </span>
+    </button>
+  </div>
+  <div class="dropdown-menu" id="dropdown-menu2" role="menu">
+    <div class="dropdown-content">
+      <div class="dropdown-item">
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">您可以</font><font style="vertical-align: inherit;">在下拉菜单中</font><font style="vertical-align: inherit;">插入</font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">任何类型的内容</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></p>
+      </div>
+      <hr class="dropdown-divider">
+      <div class="dropdown-item">
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">您只需要使用a即可</font></font><code>&lt;div&gt;</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></p>
+      </div>
+      <hr class="dropdown-divider">
+      <a href="#" class="dropdown-item"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+        这是一个链接
+      </font></font></a>
+    </div>
+  </div>
+</div>
+
+      
+    </div>
+  </div>
+
+  <div class="bd-snippet-source">
+    <p class="bd-snippet-title">
+      <span class="bd-snippet-tag bd-is-html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">的HTML</font></font></span>
+    </p>
+
+    <div class="
+        bd-snippet-code
+        bd-highlight-full
+        
+      ">
+      <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropdown is-active"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropdown-trigger"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"button"</span> <span class="na">aria-haspopup=</span><span class="s">"true"</span> <span class="na">aria-controls=</span><span class="s">"dropdown-menu2"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;span&gt;</span>Content<span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon is-small"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-angle-down"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/i&gt;</span>
+      <span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropdown-menu"</span> <span class="na">id=</span><span class="s">"dropdown-menu2"</span> <span class="na">role=</span><span class="s">"menu"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropdown-content"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropdown-item"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;p&gt;</span>You can insert <span class="nt">&lt;strong&gt;</span>any type of content<span class="nt">&lt;/strong&gt;</span> within the dropdown menu.<span class="nt">&lt;/p&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;hr</span> <span class="na">class=</span><span class="s">"dropdown-divider"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropdown-item"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;p&gt;</span>You simply need to use a <span class="nt">&lt;code&gt;</span><span class="ni">&amp;lt;</span>div<span class="ni">&amp;gt;</span><span class="nt">&lt;/code&gt;</span> instead.<span class="nt">&lt;/p&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;hr</span> <span class="na">class=</span><span class="s">"dropdown-divider"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"dropdown-item"</span><span class="nt">&gt;</span><font></font>
+        This is a link<font></font>
+      <span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+    </div>
+  </div>
+</div>
+
+
+<h3 id="hoverable-or-toggable" class="title is-4 is-spaced bd-anchor-title">
+  <span class="bd-anchor-name"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+    可悬停或可切换
+  </font></font></span>
+  <a class="bd-anchor-link" href="#hoverable-or-toggable"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+    ＃
+  </font></font></a>
+</h3>
+
+
+<div class="content">
+  <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+    该</font></font><code>dropdown</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">组件还有</font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2个其他修饰符</font></font></strong>
+  </p>
+  <ul>
+    <li>
+      <code>is-hoverable</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：</font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">悬停</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在</font></font><code>dropdown-trigger</code>
+    </li>
+    <li>
+      <code>is-active</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：下拉列表将显示</font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">所有的时间</font></font></strong>
+    </li>
+  </ul>
+</div>
+
+<div class="message is-success">
+  <p class="message-body"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+    尽管CSS</font></font><code>:hover</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">实现完美运行，但</font></font><code>is-active</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">该类可供希望使用</font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">JavaScript</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">控制下拉菜单显示的用户</font><strong><font style="vertical-align: inherit;">使用</font></strong><font style="vertical-align: inherit;">。
+  </font></font></p>
+</div>
+
+<div class="
+  bd-snippet
+  bd-is-vertical
+  
+  
+  bd-is-size-2
+  ">
+  <div class="bd-snippet-example">
+    <p class="bd-snippet-title">
+      <span class="bd-snippet-tag bd-is-example"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">例</font></font></span>
+    </p>
+
+    <div class="bd-snippet-preview">
+      
+        
+<div class="dropdown">
+  <div class="dropdown-trigger">
+    <button class="button" aria-haspopup="true" aria-controls="dropdown-menu3">
+      <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">点击我</font></font></span>
+      <span class="icon is-small">
+        <i class="fas fa-angle-down" aria-hidden="true"></i>
+      </span>
+    </button>
+  </div>
+  <div class="dropdown-menu" id="dropdown-menu3" role="menu">
+    <div class="dropdown-content">
+      <a href="#" class="dropdown-item"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+        总览
+      </font></font></a>
+      <a href="#" class="dropdown-item"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+        修饰符
+      </font></font></a>
+      <a href="#" class="dropdown-item"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+        格
+      </font></font></a>
+      <a href="#" class="dropdown-item"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+        形成
+      </font></font></a>
+      <a href="#" class="dropdown-item"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+        元素
+      </font></font></a>
+      <a href="#" class="dropdown-item"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+        组件
+      </font></font></a>
+      <a href="#" class="dropdown-item"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+        布局
+      </font></font></a>
+      <hr class="dropdown-divider">
+      <a href="#" class="dropdown-item"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+        更多
+      </font></font></a>
+    </div>
+  </div>
+</div>
+
+      
+    </div>
+  </div>
+
+  <div class="bd-snippet-source">
+    <p class="bd-snippet-title">
+      <span class="bd-snippet-tag bd-is-html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">的HTML</font></font></span>
+    </p>
+
+    <div class="
+        bd-snippet-code
+        bd-highlight-full
+        bd-is-more bd-is-more-clipped
+      ">
+      <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropdown"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropdown-trigger"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"button"</span> <span class="na">aria-haspopup=</span><span class="s">"true"</span> <span class="na">aria-controls=</span><span class="s">"dropdown-menu3"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;span&gt;</span>Click me<span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon is-small"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-angle-down"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/i&gt;</span>
+      <span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropdown-menu"</span> <span class="na">id=</span><span class="s">"dropdown-menu3"</span> <span class="na">role=</span><span class="s">"menu"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropdown-content"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"dropdown-item"</span><span class="nt">&gt;</span><font></font>
+        Overview<font></font>
+      <span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"dropdown-item"</span><span class="nt">&gt;</span><font></font>
+        Modifiers<font></font>
+      <span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"dropdown-item"</span><span class="nt">&gt;</span><font></font>
+        Grid<font></font>
+      <span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"dropdown-item"</span><span class="nt">&gt;</span><font></font>
+        Form<font></font>
+      <span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"dropdown-item"</span><span class="nt">&gt;</span><font></font>
+        Elements<font></font>
+      <span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"dropdown-item"</span><span class="nt">&gt;</span><font></font>
+        Components<font></font>
+      <span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"dropdown-item"</span><span class="nt">&gt;</span><font></font>
+        Layout<font></font>
+      <span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;hr</span> <span class="na">class=</span><span class="s">"dropdown-divider"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"dropdown-item"</span><span class="nt">&gt;</span><font></font>
+        More<font></font>
+      <span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+    </div>
+  </div>
+</div>
+
+
+<div class="
+  bd-snippet
+  bd-is-vertical
+  
+  
+  bd-is-size-2
+  ">
+  <div class="bd-snippet-example">
+    <p class="bd-snippet-title">
+      <span class="bd-snippet-tag bd-is-example"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">例</font></font></span>
+    </p>
+
+    <div class="bd-snippet-preview">
+      
+        
+<div class="dropdown is-hoverable">
+  <div class="dropdown-trigger">
+    <button class="button" aria-haspopup="true" aria-controls="dropdown-menu4">
+      <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">悬停我</font></font></span>
+      <span class="icon is-small">
+        <i class="fas fa-angle-down" aria-hidden="true"></i>
+      </span>
+    </button>
+  </div>
+  <div class="dropdown-menu" id="dropdown-menu4" role="menu">
+    <div class="dropdown-content">
+      <div class="dropdown-item">
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">您可以</font><font style="vertical-align: inherit;">在下拉菜单中</font><font style="vertical-align: inherit;">插入</font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">任何类型的内容</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+      
+    </div>
+  </div>
+
+  <div class="bd-snippet-source">
+    <p class="bd-snippet-title">
+      <span class="bd-snippet-tag bd-is-html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">的HTML</font></font></span>
+    </p>
+
+    <div class="
+        bd-snippet-code
+        bd-highlight-full
+        bd-is-more bd-is-more-clipped
+      ">
+      <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropdown is-hoverable"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropdown-trigger"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"button"</span> <span class="na">aria-haspopup=</span><span class="s">"true"</span> <span class="na">aria-controls=</span><span class="s">"dropdown-menu4"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;span&gt;</span>Hover me<span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon is-small"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-angle-down"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/i&gt;</span>
+      <span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropdown-menu"</span> <span class="na">id=</span><span class="s">"dropdown-menu4"</span> <span class="na">role=</span><span class="s">"menu"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropdown-content"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropdown-item"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;p&gt;</span>You can insert <span class="nt">&lt;strong&gt;</span>any type of content<span class="nt">&lt;/strong&gt;</span> within the dropdown menu.<span class="nt">&lt;/p&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+    </div>
+  </div>
+</div>
+
+
+<h3 id="right-aligned" class="title is-4 is-spaced bd-anchor-title">
+  <span class="bd-anchor-name"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+    右对齐
+  </font></font></span>
+  <a class="bd-anchor-link" href="#right-aligned"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+    ＃
+  </font></font></a>
+</h3>
+
+
+<div class="content">
+  <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+    您可以添加</font></font><code>is-right</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">修饰符使其具有</font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">右对齐的</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">下拉列表。
+  </font></font></p>
+</div>
+
+<div class="
+  bd-snippet
+  bd-is-vertical
+  
+  
+  bd-is-size-2
+  ">
+  <div class="bd-snippet-example">
+    <p class="bd-snippet-title">
+      <span class="bd-snippet-tag bd-is-example"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">例</font></font></span>
+    </p>
+
+    <div class="bd-snippet-preview">
+      
+        
+<div class="dropdown">
+  <div class="dropdown-trigger">
+    <button class="button" aria-haspopup="true" aria-controls="dropdown-menu5">
+      <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">左对齐</font></font></span>
+      <span class="icon is-small">
+        <i class="fas fa-angle-down" aria-hidden="true"></i>
+      </span>
+    </button>
+  </div>
+  <div class="dropdown-menu" id="dropdown-menu5" role="menu">
+    <div class="dropdown-content">
+      <div class="dropdown-item">
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">下拉菜单</font><font style="vertical-align: inherit;">默认</font><font style="vertical-align: inherit;">为</font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">左对齐</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+      
+    </div>
+  </div>
+
+  <div class="bd-snippet-source">
+    <p class="bd-snippet-title">
+      <span class="bd-snippet-tag bd-is-html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">的HTML</font></font></span>
+    </p>
+
+    <div class="
+        bd-snippet-code
+        bd-highlight-full
+        bd-is-more bd-is-more-clipped
+      ">
+      <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropdown is-active"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropdown-trigger"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"button"</span> <span class="na">aria-haspopup=</span><span class="s">"true"</span> <span class="na">aria-controls=</span><span class="s">"dropdown-menu5"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;span&gt;</span>Left aligned<span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon is-small"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-angle-down"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/i&gt;</span>
+      <span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropdown-menu"</span> <span class="na">id=</span><span class="s">"dropdown-menu5"</span> <span class="na">role=</span><span class="s">"menu"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropdown-content"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropdown-item"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;p&gt;</span>The dropdown is <span class="nt">&lt;strong&gt;</span>left-aligned<span class="nt">&lt;/strong&gt;</span> by default.<span class="nt">&lt;/p&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+    </div>
+  </div>
+</div>
+
+
+<div class="
+  bd-snippet
+  bd-is-vertical
+  
+  
+  bd-is-size-2
+  ">
+  <div class="bd-snippet-example">
+    <p class="bd-snippet-title">
+      <span class="bd-snippet-tag bd-is-example"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">例</font></font></span>
+    </p>
+
+    <div class="bd-snippet-preview">
+      
+        
+<div class="dropdown is-right">
+  <div class="dropdown-trigger">
+    <button class="button" aria-haspopup="true" aria-controls="dropdown-menu6">
+      <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">右对齐</font></font></span>
+      <span class="icon is-small">
+        <i class="fas fa-angle-down" aria-hidden="true"></i>
+      </span>
+    </button>
+  </div>
+  <div class="dropdown-menu" id="dropdown-menu6" role="menu">
+    <div class="dropdown-content">
+      <div class="dropdown-item">
+        <p><font style="vertical-align: inherit;"></font><code>is-right</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">为</font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">右对齐的</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">下拉列表</font><font style="vertical-align: inherit;">添加</font><font style="vertical-align: inherit;">修饰符</font><font style="vertical-align: inherit;">。</font></font></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+      
+    </div>
+  </div>
+
+  <div class="bd-snippet-source">
+    <p class="bd-snippet-title">
+      <span class="bd-snippet-tag bd-is-html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">的HTML</font></font></span>
+    </p>
+
+    <div class="
+        bd-snippet-code
+        bd-highlight-full
+        bd-is-more bd-is-more-clipped
+      ">
+      <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropdown is-right is-active"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropdown-trigger"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"button"</span> <span class="na">aria-haspopup=</span><span class="s">"true"</span> <span class="na">aria-controls=</span><span class="s">"dropdown-menu6"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;span&gt;</span>Right aligned<span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon is-small"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-angle-down"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/i&gt;</span>
+      <span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropdown-menu"</span> <span class="na">id=</span><span class="s">"dropdown-menu6"</span> <span class="na">role=</span><span class="s">"menu"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropdown-content"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropdown-item"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;p&gt;</span>Add the <span class="nt">&lt;code&gt;</span>is-right<span class="nt">&lt;/code&gt;</span> modifier for a <span class="nt">&lt;strong&gt;</span>right-aligned<span class="nt">&lt;/strong&gt;</span> dropdown.<span class="nt">&lt;/p&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+    </div>
+  </div>
+</div>
+
+
+<h3 id="dropup" class="title is-4 is-spaced bd-anchor-title">
+  <span class="bd-anchor-name"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+    放弃
+  </font></font></span>
+  <a class="bd-anchor-link" href="#dropup"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+    ＃
+  </font></font></a>
+</h3>
+
+
+<div class="content">
+  <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+    您可以添加</font></font><code>is-up</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">修饰符以使下拉菜单显示在下拉按钮上方。
+  </font></font></p>
+</div>
+
+<div class="
+  bd-snippet
+  bd-is-vertical
+  
+  
+  bd-is-size-2
+  ">
+  <div class="bd-snippet-example">
+    <p class="bd-snippet-title">
+      <span class="bd-snippet-tag bd-is-example"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">例</font></font></span>
+    </p>
+
+    <div class="bd-snippet-preview">
+      
+        
+<div class="dropdown is-up">
+  <div class="dropdown-trigger">
+    <button class="button" aria-haspopup="true" aria-controls="dropdown-menu7">
+      <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">下拉按钮</font></font></span>
+      <span class="icon is-small">
+        <i class="fas fa-angle-up" aria-hidden="true"></i>
+      </span>
+    </button>
+  </div>
+  <div class="dropdown-menu" id="dropdown-menu7" role="menu">
+    <div class="dropdown-content">
+      <div class="dropdown-item">
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">您可以添加</font></font><code>is-up</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">修饰符以使下拉菜单显示在下拉按钮上方。</font></font></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+      
+    </div>
+  </div>
+
+  <div class="bd-snippet-source">
+    <p class="bd-snippet-title">
+      <span class="bd-snippet-tag bd-is-html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">的HTML</font></font></span>
+    </p>
+
+    <div class="
+        bd-snippet-code
+        bd-highlight-full
+        bd-is-more bd-is-more-clipped
+      ">
+      <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropdown is-up"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropdown-trigger"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"button"</span> <span class="na">aria-haspopup=</span><span class="s">"true"</span> <span class="na">aria-controls=</span><span class="s">"dropdown-menu7"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;span&gt;</span>Dropup button<span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon is-small"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-angle-up"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/i&gt;</span>
+      <span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropdown-menu"</span> <span class="na">id=</span><span class="s">"dropdown-menu7"</span> <span class="na">role=</span><span class="s">"menu"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropdown-content"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropdown-item"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;p&gt;</span>You can add the <span class="nt">&lt;code&gt;</span>is-up<span class="nt">&lt;/code&gt;</span> modifier to have a dropdown menu that appears above the dropdown button.<span class="nt">&lt;/p&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+  <div class="bd-vars"></div>
+  </div>
+  <div id="typo" class="bd-docs-typo">
+</div>
+
+</div>
+
+  </div>
+    
+  </main>
+<h1><a href="Columns9.html">上一章</a></h1>
+<h1><a href="">下一章</a></h1>
+</body>
