@@ -1,0 +1,238 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>BULMA中文</title>
+<link href="css/css.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+body,td,th {
+	font-size: 50px;
+}
+</style>
+</head>
+<body>
+<a class="navbar-item" href="https://bulma.io">
+      <img src="https://bulma.io/images/bulma-logo.png" alt="Bulma: Free, open source, and modern CSS framework based on Flexbox" width="112" height="28">
+<h1><strong>中文CSS免费的开放源代码框架部分</strong></h1>
+</a>
+<h1>第十二章.导航栏</h1>
+<div class="bd-docs-content bd-content algolia-content">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="content"></div>
+
+<h3 id="basic-navbar" class="title is-4 is-spaced bd-anchor-title">
+  <span class="bd-anchor-name"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+    基本导航栏
+  </font></font></span>
+  <a class="bd-anchor-link" href="#basic-navbar"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+    ＃
+  </font></font></a>
+</h3>
+
+
+<div class="content">
+  <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+    为了</font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">快速入门</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">，这是完整的基本导航栏的外观：
+  </font></font></p>
+</div>
+
+<div class="bd-example is-paddingless">
+  
+<nav class="navbar" role="navigation" aria-label="主导航">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="https://bulma.io">
+      <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
+    </a>
+
+    <a role="button" class="navbar-burger" aria-label="菜单" aria-expanded="false" data-target="navbarBasicExample">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+
+  <div id="navbarBasicExample" class="navbar-menu">
+    <div class="navbar-start">
+      <a class="navbar-item"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+        家
+      </font></font></a>
+
+      <a class="navbar-item"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+        文献资料
+      </font></font></a>
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+          更多
+        </font></font></a>
+
+        <div class="navbar-dropdown">
+          <a class="navbar-item"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+            关于
+          </font></font></a>
+          <a class="navbar-item"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+            工作
+          </font></font></a>
+          <a class="navbar-item"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+            联系
+          </font></font></a>
+          <hr class="navbar-divider">
+          <a class="navbar-item"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+            报告问题
+          </font></font></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="navbar-end">
+      <div class="navbar-item">
+        <div class="buttons">
+          <a class="button is-primary">
+            <strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">注册</font></font></strong>
+          </a>
+          <a class="button is-light"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+            登录
+          </font></font></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+</div>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"navbar"</span> <span class="na">role=</span><span class="s">"navigation"</span> <span class="na">aria-label=</span><span class="s">"main navigation"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navbar-brand"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"navbar-item"</span> <span class="na">href=</span><span class="s">"https://bulma.io"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"https://bulma.io/images/bulma-logo.png"</span> <span class="na">width=</span><span class="s">"112"</span> <span class="na">height=</span><span class="s">"28"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;/a&gt;</span><font></font>
+<font></font>
+    <span class="nt">&lt;a</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"navbar-burger"</span> <span class="na">aria-label=</span><span class="s">"menu"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span> <span class="na">data-target=</span><span class="s">"navbarBasicExample"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
+    <span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;/div&gt;</span><font></font>
+<font></font>
+  <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"navbarBasicExample"</span> <span class="na">class=</span><span class="s">"navbar-menu"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navbar-start"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"navbar-item"</span><span class="nt">&gt;</span><font></font>
+        Home<font></font>
+      <span class="nt">&lt;/a&gt;</span><font></font>
+<font></font>
+      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"navbar-item"</span><span class="nt">&gt;</span><font></font>
+        Documentation<font></font>
+      <span class="nt">&lt;/a&gt;</span><font></font>
+<font></font>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navbar-item has-dropdown is-hoverable"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"navbar-link"</span><span class="nt">&gt;</span><font></font>
+          More<font></font>
+        <span class="nt">&lt;/a&gt;</span><font></font>
+<font></font>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navbar-dropdown"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"navbar-item"</span><span class="nt">&gt;</span><font></font>
+            About<font></font>
+          <span class="nt">&lt;/a&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"navbar-item"</span><span class="nt">&gt;</span><font></font>
+            Jobs<font></font>
+          <span class="nt">&lt;/a&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"navbar-item"</span><span class="nt">&gt;</span><font></font>
+            Contact<font></font>
+          <span class="nt">&lt;/a&gt;</span>
+          <span class="nt">&lt;hr</span> <span class="na">class=</span><span class="s">"navbar-divider"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"navbar-item"</span><span class="nt">&gt;</span><font></font>
+            Report an issue<font></font>
+          <span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span><font></font>
+<font></font>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navbar-end"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navbar-item"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"buttons"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button is-primary"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;strong&gt;</span>Sign up<span class="nt">&lt;/strong&gt;</span>
+          <span class="nt">&lt;/a&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button is-light"</span><span class="nt">&gt;</span><font></font>
+            Log in<font></font>
+          <span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/nav&gt;</span></code></pre></figure>
+<div class="bd-vars">
+  <div class="bd-var bd-is-body">  </div>
+
+      
+    
+</div>
+
+
+
+</div>
+<main class="bd-docs-main"></main>
+<h1><a href="Menu11.html">上一章</a></h1>
+<h1><a href="Number13.html">下一章</a></h1>
+</body>
