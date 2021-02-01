@@ -6,7 +6,7 @@
 ```
   >HTML 链接
 ```
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+>link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
 ```
 2.下载Github版本
 https://github.com/jgthms/bulma/releases/download/0.9.1/bulma-0.9.1.zip
